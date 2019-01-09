@@ -42,7 +42,6 @@ public class AttributesUtil {
 			put("legal", MediaSizeName.NA_LEGAL);
 			put("postcardus", MediaSizeName.JAPANESE_POSTCARD);
 			put("executive", MediaSizeName.EXECUTIVE);
-
 		}
 	};
 
