@@ -172,11 +172,8 @@ public class AttributesUtil {
 		}
 
 		PDRectangle mediaBox = doc.getPage(0).getMediaBox();
-		if (mediaBox.getWidth() < ms.getX(MediaSize.MM)) {
-			attributes.setSmall(true);
-		}
-		if (mediaBox.getHeight() > ms.getY(MediaSize.MM)) {
-			attributes.setSmall(true);
+		if (mediaBox.getWidth() < ms.getX(MediaSize.MM) || mediaBox.getHeight() < ms.getY(MediaSize.MM)) {
+			attributes.setNormalSize(false);
 		}
 		if (!ispaperInputPassed) {
 			hashPrintRequestAttributeSet.add(mediaSizeName);

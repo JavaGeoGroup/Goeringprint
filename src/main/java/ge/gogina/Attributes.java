@@ -6,7 +6,7 @@ import javax.print.attribute.HashPrintRequestAttributeSet;
 public class Attributes {
 
 	private HashPrintRequestAttributeSet hashPrintRequestAttributeSet;
-	private boolean isSmall;
+	private boolean normalSize;
 	private String jobName;
 	private int pageFormat;// = PageFormat.LANDSCAPE;
 	private PrintService service;
@@ -36,12 +36,12 @@ public class Attributes {
 		this.hashPrintRequestAttributeSet = hashPrintRequestAttributeSet;
 	}
 
-	public boolean isSmall() {
-		return isSmall;
+	public boolean isNormalSize() {
+		return normalSize;
 	}
 
-	public void setSmall(boolean isSmall) {
-		this.isSmall = isSmall;
+	public void setNormalSize(boolean normalSize) {
+		this.normalSize = normalSize;
 	}
 
 	public String getJobName() {

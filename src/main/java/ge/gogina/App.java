@@ -101,7 +101,7 @@ public class App {
 			if (attributes.getJobName() != null) {
 				job.setJobName(attributes.getJobName());
 			}
-			if (!(attributes.getPdfSize().equals("actualsize") && attributes.isSmall())) {
+			if (!(attributes.getPdfSize().equals("actualsize") && attributes.isNormalSize())) {
 				job.setPrintable(new PDFPrintable(doc, Scaling.SCALE_TO_FIT), pf);
 			} else {
 				job.setPrintable(new PDFPrintable(doc), pf);
